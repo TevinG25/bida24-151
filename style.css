@@ -1,0 +1,270 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: gray;
+}
+
+/* Header */
+.header {
+    background-color: rgb(75, 75, 75);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-bg.jpg') center/cover no-repeat;
+    padding: 80px 20px 40px; /* Reduced top and bottom space */
+    text-align: center;
+    position: relative;
+}
+
+.hero-logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.hero-content {
+    color: #222;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 1rem; /* Reduced bottom space */
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Main Content */
+.main-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+
+.main-content h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+/* Featured Properties */
+.properties {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.property-card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.property-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.property-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.property-card p {
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #000;
+    padding: 12px;
+    text-align: left;
+}
+th {
+    background-color: #292828;
+}
+img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+.south-east-district-box {
+    font-family: Arial, sans-serif;
+    color: #5a2a2a;
+    border: 1px solid #ccc; /* the visible box */
+    padding: 20px;           /* space inside the box */
+    margin: 30px auto;       /* space outside the box */
+    max-width: 800px;        /* width limit */
+    background-color: #fdfdfd; /* slight background */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* soft shadow */
+    border-radius: 8px;      /* slightly rounded corners */
+}
+
+.south-east-district-box .section {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.south-east-district-box .contact-info {
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.south-east-district-box .contact-column {
+    color: #333;
+}
+
+.south-east-district-box .contact-column h4 {
+    margin-bottom: 10px;
+    color: #5a2a2a;
+}
+
+.south-east-district-box a {
+    color: #a22;
+    text-decoration: none;
+}
+
+.south-east-district-box a:hover {
+    text-decoration: underline;
+}
+
+.south-east-district-box .whatsapp {
+    margin-left: 10px;
+}
+.feedback {
+    text-align: center;
+    padding: 50px 20px;
+}
+.feedback h2 { 
+    font-size: 2.5rem; 
+    margin-bottom: 30px;
+}
+.feedback form {
+ max-width: 600px;
+ margin: 0 auto;
+ text-align: left;
+}
+.feedback label {
+ display: block; 
+ margin-bottom: 5px; 
+ font-weight: bold;
+}
+.feedback input,
+.feedback textarea {
+     width: 100%;
+      padding: 10px; 
+      margin-bottom: 20px; 
+      border-radius: 5px; 
+      border: 1px solid #ccc;
+}
+.feedback button {
+     display: block; 
+     width: 100%;
+     background-color: black;
+     color: white; 
+     padding: 10px; 
+     border: none; 
+     border-radius: 5px; 
+     font-size: 1rem; 
+     font-weight: bold; 
+     cursor: pointer;
+}
+.feedback button:hover { 
+    background-color: #C00 ；
+}
